@@ -52,8 +52,7 @@ def sumCheck(arrangedList,targetSum):
         else:
             head += 1   
     return False
-
-
+#考虑到merge sort 的复杂度为nlgn，而双指针的复杂度还是n，因此算法的总复杂度应该是 nlgn 等级的
 while 1:
     a = int(input("请输入你需要检查的和:"))
     if sumCheck(random_list20,a) == 1:
